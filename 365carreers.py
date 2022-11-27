@@ -12,9 +12,7 @@ import mplfinance as mpf
 import plotly.graph_objects as go
 from scipy.stats import norm
 
-
 #How to measure a security's risk
-
 
 tickers=['DIS', 'COST']
 
@@ -34,7 +32,6 @@ sec_returns['DIS'].std()
 sec_returns['DIS'].std()*250**0.5
 
 #Portfolio Diversification, calculating covariance and correlation
-
 
 DIS_var=sec_returns['DIS'].var()
 DIS_var
@@ -127,7 +124,6 @@ np.sum(weights*log_returns.mean())*250
 #Expected portfolio volatility
 
 np.sqrt(np.dot(weights.T, np.dot(log_returns.cov()*250, weights)))
-
 
 
 pfolio_returns=[]
